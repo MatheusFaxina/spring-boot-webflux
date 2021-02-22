@@ -1,0 +1,15 @@
+server:
+  port: 8081
+---
+spring:
+  profiles:
+    active: dev
+---
+spring:
+  profiles: dev
+  data:
+    mongodb:
+      uri: mongodb+srv://matheus:matheus@cluster0.mnscs.mongodb.net/matheus?retryWrites=true&w=majority
+---
+spring:
+  profiles: test
